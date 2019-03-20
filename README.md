@@ -1,6 +1,6 @@
 ---
-# "Engenharia reversa 1: `mov`, `lea` e aritmética"
-# "Igor Montagner"
+## "Engenharia reversa 1: `mov`, `lea` e aritmética"
+## "Igor Montagner"
 ...
 
 Data de entrega: 20/03
@@ -285,10 +285,9 @@ Ela junta os dois registradores signed EAX e EDX para que o forme o dividendo ne
 
 **Resposta**:
 ~~~{asm}
-void ex4(int a, int b, int *c, int *d){
-    int e = a;
-    
-
+void ex5(int a, int b, int *c, int *d){
+    *d = a/b;
+    *c = a%b; 
 }
 
 ~~~
